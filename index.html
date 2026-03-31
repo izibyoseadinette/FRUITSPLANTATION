@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Plantation | Sustainable Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .wild-fruit-card {
+            transition: transform 0.3s ease;
+        }
+
+        .wild-fruit-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-seedling text-green-700 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-green-900 uppercase">Fruits Plantation</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest text-stone-600">
+                    <a href="#home" class="hover:text-green-700 transition">Home</a>
+                    <a href="#practical" class="hover:text-green-700 transition">Practical Tips</a>
+                    <a href="#hdoc" class="hover:text-green-700 transition">HDOC</a>
+                    <a href="#crops" class="hover:text-green-700 transition">Crop Guide</a>
+                    <a href="#wild" class="hover:text-green-700 transition">Wild Fruits</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-center px-4 pt-16">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl text-white mb-6">Grow fruit trees, and they will be fed for a lifetime.</h1>
+            <p class="text-xl text-stone-200 mb-8 font-light italic">
+                An essential path to food security and sustainable income in today's changing climate.
+            </p>
+            <a href="#practical" class="bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-full transition-all inline-block font-semibold uppercase tracking-widest text-sm">
+                Get Started Planting
+            </a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-green-900">Why Fruit Trees?</h2>
+                    <p class="text-lg text-stone-600 leading-relaxed mb-4">
+                        In an era of inflation and unemployment, growing fruit trees is more than a hobby—it's a sustainable source of nutritious food and local income. 
+                    </p>
+                    <p class="text-lg text-stone-600 leading-relaxed">
+                        Caring for these juicy treasure troves doesn't have to be complicated. With the right techniques, anyone can transform their land into a productive orchard.
+                    </p>
+                </div>
+                <div class="bg-stone-100 p-8 rounded-2xl border-l-8 border-green-700">
+                    <i class="fa-solid fa-quote-left text-green-700 text-3xl mb-4 opacity-30"></i>
+                    <p class="text-stone-700 italic text-xl">
+                        "Sustainable income and cheaper, locally sourced fruit for communities."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Considerations -->
+    <section id="practical" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Practical Considerations</h2>
+                <p class="text-stone-500 max-w-2xl mx-auto">Understanding your land, climate, and environment is the first step toward a successful harvest.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sunlight -->
+                <div class="glass-card p-8 rounded-3xl shadow-sm border border-stone-100">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h
